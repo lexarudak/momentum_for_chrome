@@ -1,0 +1,18 @@
+{
+	"manifest_version": 3,
+	"name": "Momentum 2022q2",
+	"version": "0.0.1.0",
+	"description": "Momentum task for 0 stage of rs school 2022 q2",
+	"browser_action":{
+    "default_popup":"index.html",
+		"default_title": "Momentum 2022q2",
+    "chrome_url_overrides": {
+      "newtab": "index.html"
+    }
+	},
+  "icons":{
+		"16": "128.png",
+    "48": "128.png",
+    "128": "128.png"
+	}
+}

@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/lexarudak-JSFEPRESCHOOL2022Q2/momentum/pictures/momentum-logo.svg">
+  <link rel="stylesheet" href="css/icon-font.css"> 
+  <link rel="stylesheet"  href="css/owfont-regular.css">
+  <link rel="stylesheet" media="(min-width: 900px)" href="css/style-900.css">
+  <link rel="stylesheet" media="(min-width: 500px) and (max-width: 899px)" href="css/style-500.css">
+  <link rel="stylesheet" media="(max-width: 499px)" href="css/style-320.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+  href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100;200;300;400;500;600;700;800;900&display=swap"
+  rel="stylesheet">
+
+  <title>momentum</title>
+</head>
+<body class="ru">
+  <div class="backgrounds">
+    <div class="backgrounds2">
+      <div class="wrapper">
+        <header class="header">
+          <div class="headerContainer">
+            <div class="playerContainer"> 
+              <div class="player">
+                <div class="playerWrapper">
+                  <div class="mainMusicButtons">
+                    <div class="secondaryMusicButton blockAnimation1 previousTrack fa-solid fa-backward-step"></div>
+                    <div class="mainMusicButton blockAnimation1 fa-solid fa-play"></div>
+                    <div class="secondaryMusicButton blockAnimation1 nextTrack fa-solid fa-forward-step"></div>
+                    <div class="muteWrapper blockAnimation1">
+                      <div class="secondaryMusicButton blockAnimation1 mute fa-solid fa-volume-xmark"></div>
+                    </div>
+                  </div>
+                  <div class="secondaryMusicButton blockAnimation1 playerSize fa-solid fa-expand"></div>
+                  <audio src="#"></audio>
+                </div>
+                <div class="progressAndVolume">
+                  <div class="volumeWrapper">
+                    <div class="volumeTextBox">
+                      <div class="volumeMin fa-solid fa-volume-low"></div>
+                      <div class="volumeValue"></div>
+                      <div class="volumeMax fa-solid fa-volume-high"></div>
+                    </div>
+                    <div class="volumeContainer">
+                      <div class="volume"></div>
+                    </div>
+                  </div>
+                  <div class="progressWrapper">
+                    <div class="progressTextBox">
+                      <div class="currentProgress"></div>
+                      <div class="currentTrack"></div>
+                      <div class="progressMax"></div>
+                    </div>
+                    <div class="progressContainer">
+                      <div class="progress"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="playlistWrapper>">
+                  <ul class="playlist">
+              
+                  </ul>
+                </div>
+              </div>
+            </div>  
+            <div class="weather">
+              
+              <div class="weatherBlock1">
+                <div class="temperature"></div>
+                <i class="weatherIcon owf"></i>
+              </div> 
+              <div class="weaterTextBlock">
+                <div class="weatherBlock2">
+                  <div
+                  class="feelsLike"></div>
+                  <div class="weatherDescription"></div>
+                </div>
+                <div class="weatherBlock2
+                3">
+                  <div class="windSpeed">
+                  </div>
+                  <div class="humidity">
+                  </div>
+                </div>
+                <div class="weatherCity blockAnimation3"></div>
+                <div class="changeCityWrapper">
+                  <form class="changeCityForm" name="changeCityForm">
+                    <p class="cityQuestion">Изменить город?</p>
+                    <input class="changeCityInput" name="changeCityInput" type="text">
+                  </form>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </header>
+        <main class="main">
+          <div class="mainContainer">
+            <div class="mainSliderButton leftArrow blockAnimation1">
+              &lt;
+            </div>
+            <div class="mainBody">
+              <div class="time">
+                <p class="hoursAndMinutes"></p>
+                <div class="secondsAndDate">
+                  <p class="seconds"></p>
+                  <p class="date"></p>
+                </div>
+              </div>
+              <div class="greeting">
+                <p class="greetingText"><span class="greetingDayTime"></span><span class="yourName blockAnimation3"></span></p>
+              </div>
+            </div>
+            <div class="mainSliderButton rightArrow blockAnimation1">
+              &gt;
+            </div>
+          </div>
+        </main>
+        <footer class="footer">
+          <div class="footerContainer">
+            <div class="settingsBase">
+              <div class="settingsButton blockAnimationRotate fa-solid fa-gear"></div>
+              <div class="toDoButton blockAnimation1 fa-solid fa-circle-check"></div>
+            </div>
+            <div class="quote">
+              <div class="quoteWrapper">
+                <p class="quoteText"></p>
+                <p class="quoteAuthor"></p>
+                <i class="refreshQuote blockAnimationRotate fa-solid fa-rotate-right"></i>
+              </div>
+            </div>
+            <div class="authors">
+              <div class="photoInfo invisible">
+                <a class="photoAuthor" href="#"></a>
+                <a class="photoSrc" href="#">Photo from Unsplash</a>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </div>
+
+  <div class="popupYourName">
+    <form class="yourNameForm" name="yourNameForm">
+      <p class="yourNameAnswer"></p>
+      <input name="yourNameInput" class="yourNameInput" type="text">
+    </form>
+  </div>
+
+  
+
+
+  <form class="settings" name="settings">
+    <div class="settingsCloseButton blockAnimation1 fa-solid fa-xmark"></div>
+    <div class="settingsBlock">
+      <span class="settingsText ruText">Язык (Language)</span>
+      <span class="settingsText enText">Language (Язык)</span>
+      <select class="languageSelect settingsSelect blockAnimation2" name="languageSelect">
+        <option value="ru">Русский</option>
+        <option value="en">English</option>
+      </select>
+    </div>
+    <div class="settingsBlock">
+      <span class="settingsText ruText">Галерея</span>
+      <span class="settingsText enText">Gallery</span>
+      <select class="imagesSelect settingsSelect blockAnimation2" name="imagesSelect">
+        <option value="github">GitHub</option>
+        <option value="unsplash">Unsplash</option>
+        <option value="flickr">Flickr</option>
+      </select>
+    </div>
+    <div class="settingsBlock errorBlock hide">
+      <span class="settingsText ruText">Извините, не более 50 изображений в час</span>
+      <span class="settingsText enText">Sorry, no more than 50 images per hour</span>
+    </div>
+    <div class="settingsBlock tagsBlock hide">
+      <span class="settingsText ruText">Теги</span>
+      <span class="settingsText enText">Tags</span>
+      <div class="tegs">
+        <input type="text" name="tagsInput" class="settingsTextInput">
+      </div>
+    </div>
+    <div class="settingsBlock errorTagBlock hide">
+      <span class="settingsText ruText">По этому тегу ничего не найдено</span>
+      <span class="settingsText enText">Nothing found for this tag</span>
+    </div>
+    <div class="settingsBlock">
+      <span class="settingsText ruText">Настройки экрана</span>
+      <span class="settingsText enText">Display settings</span>
+      <div class="displayElements">
+        <div class="timeDisplay block">
+          <span class="displayElementsText ruText">Время и дата</span>
+          <span class="displayElementsText enText">Time and date</span>
+          <input class="checkbox" type="checkbox" value="time" id="timeCheck">
+          <label class="switcher" for="timeCheck">
+            <i class="ball"></i>
+          </label>
+        </div>
+        <div class="greetingDisplay block">
+          <span class="displayElementsText ruText">Приветствие</span>
+          <span class="displayElementsText enText">Greeting</span>
+          <input class="checkbox" type="checkbox" value="greeting" id="greetingCheck">
+          <label class="switcher" for="greetingCheck">
+            <i class="ball"></i>
+          </label>
+        </div>
+        <div class="greetingDisplay block">
+          <span class="displayElementsText ruText">Цитата</span>
+          <span class="displayElementsText enText">Quote</span>
+          <input class="checkbox" type="checkbox" value="quote" id="quoteCheck">
+          <label class="switcher" for="quoteCheck">
+            <i class="ball"></i>
+          </label>
+        </div>
+        <div class="weatherDisplay block">
+          <span class="displayElementsText ruText">Погода</span>
+          <span class="displayElementsText enText">Weather</span>
+          <input class="checkbox" type="checkbox" value="weather" id="weatherCheck">
+          <label class="switcher" for="weatherCheck">
+            <i class="ball"></i>
+          </label>
+        </div>
+        <div class="playerDisplay block">
+          <span class="displayElementsText ruText">Плеер</span>
+          <span class="displayElementsText enText">Player</span>
+          <input class="checkbox" type="checkbox" value="player" id="playerCheck">
+          <label class="switcher" for="playerCheck">
+            <i class="ball"></i>
+          </label>
+        </div>
+        <div class="toDoListDisplay block">
+          <span class="displayElementsText ruText">Список дел</span>
+          <span class="displayElementsText enText">To do List</span>
+          <input class="checkbox" type="checkbox" value="toDoButton" id="toDoListCheck">
+          <label class="switcher" for="toDoListCheck">
+            <i class="ball"></i>
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="settingsBlock">
+      <span class="settingsText ruText">О приложении</span>
+      <span class="settingsText enText">About app</span>
+      <div class="infoBlock">
+        <a class="myGitHubLink blockAnimation4" target='_blank' href="https://github.com/lexarudak">
+          <span class="displayElementsText ruText">GitHub автора</span>
+          <span class="displayElementsText enText">Creator's GitHub</span>
+        </a>
+        <a class="rssSchoolLink blockAnimation4" target='_blank' href="https://rs.school/js/">
+          <span class="displayElementsText ruText">The RS School</span>
+          <span class="displayElementsText enText">The RS School</span>
+        </a>
+        <p class="y2022">2022</p>
+      </div>
+    </div>
+  </form>
+
+  <div class="toDoList">
+    <div class="toDoHeader">
+      <div class="titleBlocks">
+        <div class="titleToDoButton active">
+          <span class="toDoTitle ruText">Список дел</span>
+          <span class="toDoTitle enText">To Do List</span>
+        </div>
+        <div class="titleDoneButton blockAnimation4">
+          <span class="doneTitle ruText">Сделано</span>
+          <span class="doneTitle enText">Done</span>
+        </div>
+      </div>
+      <div class="toDoButtons">
+        <div class="cleanButton blockAnimation1 fa-solid fa-trash-can"></div>
+        <div class="toDoCloseButton blockAnimation1 fa-solid fa-xmark"></div>
+      </div>
+    </div>
+    
+    <form class="toDoListForm" name="toDoListForm">
+      <div class="toDoAndDone">
+        <div class="toDoWrapper active">
+          <ul class="toDo">
+            <li class="liToHide"></li>
+          </ul>
+          <div class="cleanToDoText">
+            <span class="ruText">Список дел пуст</span>
+            <span class="enText">Clean To Do list</span>
+          </div>
+        </div>
+        <div class="doneWrapper">
+          <ul class="done">
+            <li class="liToHide"></li>
+          </ul>
+          <div class="cleanDoneText">
+            <span class="ruText">Список сделанного пуст</span>
+            <span class="enText">Clean Done list</span>
+          </div>
+        </div>
+      </div>
+      <input class="newToDo" type="text" name="newToDo">
+    </form>
+  </div>
+  <button class="testButton">
+    
+  </button>
+
+  <div class="backgrounds3">
+  </div>
+  <div class="backgrounds4">
+  </div>
+  <script src="index.js" type="module"></script>
+</body>
+</html>
