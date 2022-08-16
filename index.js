@@ -2,7 +2,7 @@ console.log('Выполнено всё, поэтому опишу нюансы, 
 
 
 // import
-import musicList from '../momentum/playlist.js';
+import musicList from '../playlist.js';
 // const
 
 const time = document.querySelector('.time')
